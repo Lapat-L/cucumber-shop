@@ -29,7 +29,7 @@ public class BuyStepdefs {
         order.addItem(prod, quantity);
     }
 
-    @Then("total should be {float}")
+    @Then("total is {float}")
     public void total_should_be(double total) {
         assertEquals(total, order.getTotal());
     }
